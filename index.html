@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museu Nacional</title>
+    <link rel="stylesheet" href="./assets/css/global-styles.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="home">
+    <header class="header">
+      <img
+        src="./assets/images/logo.png"
+        alt="Logo do museu"
+        class="museum-logo"
+      />
+      <nav>
+        <ul class="links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Exposições</a></li>
+          <li><a href="index.html">Pesquisa</a></li>
+          <li><a href="index.html">Acervo</a></li>
+          <li><a href="index.html">Vídeos</a></li>
+          <li><a href="index.html">Fotos</a></li>
+          <li><a href="index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="museum-content">
+        <div class="main-images">
+          <img src="./assets/images/museu.png" alt="Imagem de um museu" />
+        </div>
+        <div class="main-images deposition">
+          <img
+            src="./assets/images/depoimento.png"
+            alt="Depoimento sobre o museu"
+          />
+        </div>
+        <div class="about-museum">
+          <div class="museum-infos">
+            <h2>VÍDEO CONHEÇA O MUSEU</h2>
+            <iframe
+              src="https://www.youtube.com/embed/RGUYb-hivrc?si=Z_GiEtMWiOC5JHii"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="map-find-museum">
+            <h2>MAPA: ENCONTRE O MUSEU</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206445750061!2d-43.22910382504555!3d-22.90575503783352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1709774474045!5m2!1spt-BR!2sbr"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="expositions">
+            <h2>EXPOSIÇÕES</h2>
+            <ul class="items">
+              <li><span>Os assustadores insetos</span></li>
+              <li>
+                <span>O crânio da Luiza, a mulher mais antiga do Brasil</span>
+              </li>
+              <li><span>Preguiça gigante e tigre-dentes-de-sabre</span></li>
+              <li><span>Plantas do Brasil Central</span></li>
+              <li><span>Teresa Cristina: A Imperatriz Arqueóloga</span></li>
+              <li><span>Arte Com Dinossauros - Paleoarte</span></li>
+              <li><strong>Veja todos (65)</strong></li>
+            </ul>
+          </div>
+          <div class="years-history">
+            <h2>200 ANOS DE HISTÓRIA</h2>
+            <p>
+              Numa ponto que avança sobre o mar, posteriormente conhecida como
+              Ponta do Calabouço, entre as praias de Piaçaba e Santa Luzia, no
+              centro histórico do Rio de Janeiro, os portuguêses construíram em
+              1603 a fortaleza de Santiago, origem do conjunto arquitetônico que
+              hoje abriga o Museu Histórico Nacional.
+            </p>
+            <strong class="read-more">Leia mais</strong>
+          </div>
+        </div>
+        <div class="visit">
+          <div class="date">
+            <h2 class="date-title">FAÇA UMA VISITA</h2>
+            <form class="form-choose-date">
+              <div class="fields">
+                <div class="visit-date">
+                  <label for="visit-date-input">Data</label>
+                  <input
+                    type="date"
+                    name="visit-date"
+                    class="visit-date-input"
+                    id="visit-date"
+                    placeholder="dd/mm/aaaa"
+                  />
+                </div>
+                <div class="amount-people">
+                  <label for="amount-people-input">Qtd pessoas</label>
+                  <input
+                    type="number"
+                    name="amount-people-input"
+                    id="amount-people-input"
+                    class="amount-people-input"
+                    placeholder="1"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="check-availability">
+                Verificar disponibilidade
+              </button>
+            </form>
+          </div>
+          <div class="photos-galery">
+            <h2 class="title">GALERIA DE FOTOS</h2>
+            <div class="photos">
+              <div class="photo">
+                <img
+                  src="./assets/images/fundo-foto.png"
+                  alt="Fundo das imagens"
+                /><img
+                  src="./assets/images/imagem1.jpg"
+                  alt="Imagem de algumas exposições no museu"
+                  class="image"
+                />
+              </div>
+
+              <div class="photo">
+                <img
+                  src="./assets/images/fundo-foto.png"
+                  alt="Fundo das imagens"
+                /><img
+                  src="./assets/images/imagem2.jpg"
+                  alt="Imagem de algumas exposições no museu"
+                  class="image"
+                />
+              </div>
+
+              <div class="photo">
+                <img
+                  src="./assets/images/fundo-foto.png"
+                  alt="Fundo das imagens"
+                /><img
+                  src="./assets/images/imagem3.jpg"
+                  alt="Imagem de algumas exposições no museu"
+                  class="image"
+                />
+              </div>
+
+              <div class="photo">
+                <img
+                  src="./assets/images/fundo-foto.png"
+                  alt="Fundo das imagens"
+                /><img
+                  src="./assets/images/imagem4.jpg"
+                  alt="Imagem de algumas exposições no museu"
+                  class="image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img
+        src="./assets/images/fundo-rodape.png"
+        alt="Linha que separa o rodapé da parte principal do site"
+        class="footer-line"
+      />
+      <nav class="navigation-menu">
+        <ul class="links-list footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Exposições</a></li>
+          <li><a href="index.html">Pesquisa</a></li>
+          <li><a href="index.html">Acervo</a></li>
+          <li><a href="index.html">Vídeos</a></li>
+          <li><a href="index.html">Fotos</a></li>
+          <li><a href="index.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        <span>2024</span>
+        <span class="national-museum-text">Museu Nacional</span>
+        <span>– Todos os direitos reservados.</span>
+      </div>
+    </footer>
+  </body>
+</html>

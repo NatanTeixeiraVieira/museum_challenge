@@ -1,0 +1,294 @@
+@import url('/assets/css/theme/light.css');
+
+.home {
+  background-color: var(--background-color);
+}
+
+.home .links-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.home .links-list a {
+  color: var(--secondary-color);
+}
+
+/* Header */
+
+.home .header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  height: 10rem;
+  padding: 2rem 12rem 0 12rem;
+  margin-bottom: -4.5rem;
+}
+
+.home .header .museum-logo {
+  height: 1.5rem;
+}
+
+/* Main */
+
+.home .main .museum-content {
+  display: grid;
+  grid-template-columns: 50% 25%;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.home .main .museum-content .about-museum *,
+.home .main .museum-content .visit * {
+  font-size: 0.875rem;
+}
+
+.home .main .museum-content .about-museum h2,
+.home .main .museum-content .visit h2 {
+  font-size: 1rem;
+}
+
+.home .main .museum-content .visit h2 {
+  color: var(--secondary-color);
+}
+
+.home .main .museum-content .main-images {
+  display: flex;
+}
+
+.home .main .museum-content .main-images img {
+  width: 100%;
+}
+
+.home .main .museum-content .about-museum {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 12rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home .main .museum-content .about-museum h2 {
+  color: var(--text-tertiary-color);
+  margin-bottom: 1rem;
+}
+
+.home .main .museum-content .about-museum iframe {
+  width: 100%;
+}
+
+.home .main .museum-content .expositions .items li {
+  list-style-type: disc;
+  margin-left: 3rem;
+}
+
+.home .main .museum-content .expositions .items li span,
+.home .main .museum-content .expositions .items li strong,
+.home .main .museum-content .years-history .read-more {
+  color: var(--secondary-color);
+}
+
+.home .main .museum-content .years-history p {
+  margin-bottom: 1rem;
+}
+
+.home .main .museum-content .visit .date {
+  padding: 2rem;
+  background-color: var(--background-paper-500);
+}
+
+.home .main .museum-content .form-choose-date .fields {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.home .main .museum-content .visit .visit-date-input {
+  width: 6rem;
+}
+
+.home
+  .main
+  .museum-content
+  .visit
+  .visit-date-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.home .main .museum-content .visit .amount-people-input {
+  width: 3rem;
+}
+
+.home .main .museum-content .visit .check-availability {
+  width: 100%;
+  padding: 0.75rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--background-paper-700);
+  color: var(--text-secondary-color);
+}
+
+.home .main .museum-content .visit .photos-galery .title {
+  margin-bottom: 1rem;
+}
+
+.home .main .museum-content .visit .photos-galery {
+  padding: 2rem;
+  background-color: var(--background-paper-300);
+}
+
+.home .main .museum-content .visit .photos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+
+.home .main .museum-content .visit .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .main .museum-content .visit .photo .image {
+  position: absolute;
+}
+
+/* Footer */
+
+.home .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.home .footer .navigation-menu {
+  margin: 3rem 0 1rem 0;
+}
+
+.home .footer .footer-links-list {
+  justify-content: center;
+}
+
+.home .footer .copyright {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.home .footer .copyright .national-museum-text {
+  color: var(--secondary-color);
+}
+
+/* Big desktop */
+
+@media (min-width: 1700px) {
+  .home .main .museum-content .about-museum iframe {
+    width: 22rem;
+  }
+}
+
+/* Desktop */
+
+@media (max-width: 1300px) {
+  .home .main .museum-content .visit .photos-galery {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 1175px) {
+  .home .header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 14rem;
+  }
+
+  .home .header .museum-logo {
+    width: 15.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 1020px) {
+  html {
+    font-size: 14px;
+  }
+
+  .home .main .museum-content {
+    grid-template-columns: 60% 30%;
+  }
+
+  .home .main .museum-content .expositions .items li {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home .main .museum-content {
+    grid-template-columns: 60% 35%;
+  }
+}
+
+/* Cell Phone */
+
+@media (max-width: 760px) {
+  html {
+    font-size: 12px;
+  }
+
+  .home .main .museum-content {
+    grid-template-columns: 100%;
+  }
+
+  .home .main .museum-content .about-museum iframe {
+    height: 9rem;
+  }
+
+  .home .main .museum-content .deposition {
+    justify-content: center;
+  }
+
+  .home .main .museum-content .deposition img {
+    width: 60%;
+  }
+
+  .home .main .museum-content .visit .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home .main .museum-content .visit .photos {
+    grid-template-columns: repeat(auto-fill, 12rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .home .header {
+    height: 28rem;
+  }
+
+  .home .links-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home .main .museum-content .about-museum {
+    grid-template-columns: 100%;
+    grid-template-rows: 26rem;
+  }
+
+  .home .main .museum-content .about-museum iframe {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 290px) {
+  html {
+    font-size: 10px;
+  }
+}
